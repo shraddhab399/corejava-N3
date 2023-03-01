@@ -3,6 +3,7 @@ package listdemo;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Vector;
 
 public class vectorDemo {
 
@@ -13,19 +14,19 @@ public class vectorDemo {
 		obj1.add('a');
 		obj1.add(106);*/
 		obj1.add(30.8);
-		obj1.addAll(obj);
+		obj1.addAll(obj1);
 		System.out.println("second list is :"+obj1);
-		System.out.println("size of list 1 :"+obj.size());
+		System.out.println("size of list 1 :"+obj1.size());
 		System.out.println("is List2 is empty? :"+obj1.isEmpty());
-		obj.remove(101);
-		System.out.println("first list is :"+obj);
+		obj1.remove(101);
+		System.out.println("first list is :"+obj1);
 		System.out.println(obj1.contains(101));
 		System.out.println("Element at index 1 :"+obj1.get(1));
 		System.out.println("index of 'a' :"+obj1.indexOf('a'));
 		System.out.println(obj1);
 		System.out.println("index of 30.8f :"+obj1.indexOf(30.8));
-		obj.clear();
-		System.out.println(obj);
+		obj1.clear();
+		System.out.println(obj1);
 	
 		List<Integer> obj2=new ArrayList<>();
 		obj2.add(67);
